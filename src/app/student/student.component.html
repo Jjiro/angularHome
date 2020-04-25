@@ -1,0 +1,36 @@
+
+
+<div class="content" role="main">
+  <h1>Student</h1>
+</div>
+<!--
+<h1 *ngIf="showHeading">Teacher</h1>
+-->
+<br/>
+<button (click)="clickAddStudent($event)">Add Student</button>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ModalLoginForm">
+Adding Student</button>
+
+<br/>
+<br/>
+<table>
+  <tr>
+    <th>FirstName</th>
+    <th>LastName</th>
+    <th>Gender</th>
+    <th>Address</th>
+    <th>Language</th>
+  </tr>
+
+  <tr ng-repeat = "student in students | orderBy : language" >
+    <td>{{ student.firstName }}</td>
+    <td>{{ student.lastName }}</td>
+    <td>{{ student.gender }}</td>
+    <td>{{ student.address }}</td>
+    <td>{{ student.language }}</td>
+  </tr>
+</table>
+<br/>
+<br/>
+<p *ngIf="student.length > 5">A new student was added recently!</p>
+
