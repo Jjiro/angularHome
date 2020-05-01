@@ -3,13 +3,6 @@
 <div class="content" role="main">
   <h1>Teacher</h1>
 </div>
-<!--
-<h1 *ngIf="showHeading">Teacher</h1>
--->
-<br/>
-<button (click)="clickAddTeacher($event)">Add Teacher</button>
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#ModalLoginForm" (click)="clickAddTeacherModal($event)">
-Adding Teacher</button>
 
 <br/>
 <br/>
@@ -32,5 +25,5 @@ Adding Teacher</button>
 </table>
 <br/>
 <br/>
-<p *ngIf="teacher.length > 5">A new teacher was added recently!</p>
+<p *ngIf="teachers.length > 5">A new teacher was added recently!</p>
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Student} from './student';
-import {STUDENTS} from './studentData';
+import {Student} from '../model/student';
+import {STUDENTS} from '../data/studentData';
 import {$} from 'protractor';
 
 @Component({
@@ -32,11 +32,5 @@ export class StudentComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  clickAddStudent($event): void{
-    alert('You\'ve just added a student.');
-  }
-  clickAddTeacherModal($event): void {
-    $('#myModal').modal('hide');
-  }
 
 }

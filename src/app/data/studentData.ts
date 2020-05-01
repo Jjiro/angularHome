@@ -24,7 +24,6 @@ export const STUDENTS = [
   {
     firstName: 'Lili',
     lastName: 'Fyu',
-    age: 33,
     gender: 'female',
     address: 'Voru',
     language: 'Russian',
